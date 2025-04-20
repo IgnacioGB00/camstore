@@ -460,6 +460,9 @@ footer ul li a{
         justify-self: end;
         align-self: center;
     }
+    #link hr{
+        display: none;
+    }
     #icons{
         justify-self: end;
         align-self: center;
