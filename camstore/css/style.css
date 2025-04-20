@@ -1,0 +1,539 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html , body{
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+}
+.bg-black{
+    background-color: #000;
+}
+.btn, .arrow, #categories div, .card img{
+    cursor: pointer;
+}
+header{
+    background-image: url("../img/backroundCell.jpg");
+    grid-template-rows:  39vw 110vw 19vw;
+    width: 100%;
+}
+.grid{
+    display: grid;
+
+}
+.bg-cover{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#nav{
+    justify-content: space-between;
+    gap: 30vw;
+   position: relative;
+   height: 20vw;
+   align-items: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.textWhite{
+    color: #FFFFFF;
+    letter-spacing: 2.5px;
+}
+
+#logo, #logo2{
+    font-size:clamp(2em, 3vw, 3em) ;
+}
+#menuBurguer div{
+    width: 40px;
+    height: 5px;
+    margin: 0.5em;
+    border-radius: 50px;
+}
+nav input{
+    display: none;
+}
+#burguer-link{
+    position: absolute;
+    top: 0;
+    right:-105%;
+    width: 80%;
+    margin: 0;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+    padding-top: 1em;
+    border-left: 1px solid #A66CFF;
+}
+#burguer-link ul li, #burguer-link label{
+    padding: 11px;
+    font-size: 1.5em;
+}
+.megaMenu{
+    display: none;
+}
+.hoverMegamenu:hover .megaMenu{
+    display: block;
+}
+.megaMenu li a{
+ font-size: 19px;
+
+}
+#burguer-link #icons img{
+    width: 52px;
+}
+#xClose i img{
+    width: 35px;
+}
+#menu:checked ~ #burguer-link{
+    right: 0;
+}
+ #close:checked ~ #burguer-link{
+    right:-100%;
+} 
+#burguer-link ul li{
+    list-style: none;
+}
+#icons li img{
+    width: 2em;
+}
+h1{
+font-size: clamp(2em, 4.5vw, 7em);
+}
+h1, .card, #BannerDiscount, footer{
+    text-align: center;
+}
+.bg-purple{
+   background-color: #6A0DAD;
+   
+}
+#blackButton, .purple, #Subscribe{
+   border: none;
+   border-radius: 10px;
+   padding: 25px;
+   font-size: clamp(1.5rem, 2.5vw, 2rem);
+   height: clamp(1em, 5.5vw, 7em);
+   justify-self: center;
+}
+header, section{
+    padding: 1em;
+}
+
+.Title{
+    font-family: "Playfair Display", serif;
+    font-weight:normal ;
+    line-height: clamp(46px, 20vw, 8wv);
+    
+}
+#DSLR{
+    background-image: url("../img/categories1.jpg");
+}
+#Accessories{
+    background-image: url("../img/categories2.jpg");
+}
+#lenses{
+    background-image: url("../img/categories3.jpg");
+}
+#categories div{
+    height: 91vw;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 18px;
+}
+h2{
+    font-size: clamp(2rem, 4vw, 5rem);
+    padding: 1em 0;
+}
+#categories div h3{
+    font-size: clamp(2rem, 4vw, 5rem);
+    text-shadow: 
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+.fontsNunito{
+    font-family: "Nunito", sans-serif;
+    line-height: 2em;
+  }
+  section{
+    padding-top: 1.5em;
+  }
+#sliderContent{
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: hidden;
+    width: 100%;
+    margin: auto;
+    gap: 1em;
+    align-items: center;
+    justify-items: center;
+}
+
+.card{
+    flex-direction: column;
+    z-index: 1;
+    grid-column: 1/4;
+}
+.card, #categories div, #blackButton, .purple, #Subscribe{
+    align-items: center;
+    justify-content: center;
+}
+.card picture{
+    background: linear-gradient(64deg,rgba(18, 18, 18, 1) 25%, rgba(61, 0, 102, 1) 54%, rgba(101, 11, 165, 1) 64%, rgba(211, 191, 255, 1) 100%);
+    background-size: 61vw;
+    background-position: center;
+    border-radius: 100%;
+}
+.card img{
+    width: 61vw; 
+    height: 61vw;   
+    padding: 2em;
+    object-fit: contain;
+    
+}
+.imgAnimation{
+    animation-name: photoAnimation;
+    animation-duration: 4s;
+}
+@keyframes photoAnimation{
+    from {
+        opacity: 0;
+        
+      }
+      to {
+        opacity: 1;
+      }
+}
+.card h3{
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    padding: 1em 0;
+}
+.card p{
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    padding: 1vw 0 0 0;
+}
+.card samp{
+    color: #A66CFF;
+}
+#left{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: start;
+}
+#right{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    justify-self: end;
+}
+.arrow{
+    background-color: transparent;
+    border: none;
+    padding: 1em 1.5em;
+}
+.arrow img{
+    width: 9vw;
+}
+#featured p{
+    padding: 0 0 2em 0;
+}
+#BannerDiscount{
+    background-image: url("../img/backgroundBanner.jpg");
+}
+#BannerDiscount p span{
+    color: #bb95f3;
+}
+#BannerDiscount img{
+    width: 72vw;
+    padding: 3em 0;
+}
+#blackButton{
+    margin-bottom: 1em;
+}
+footer{
+    background-color: #FFFFFF;
+    padding: 1em;
+}
+
+footer, footer #logo2, footer p{
+    color: #000;
+}
+footer input{
+    border: 3px solid #A66CFF;
+    padding: 10px 4px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin: 1em 0;
+}
+
+footer ul{
+    padding: 2em 0;
+}
+footer ul li {
+    list-style: none;
+}
+footer ul li a{
+    color: #2D2D2D;
+}
+#featured p{
+    font-size: clamp(1rem, 2vw, 1.4rem);
+}
+@media(width >= 950px){
+    header{
+        background-image: url("../img/backgroundHeader.jpg");
+        grid-template-rows: 15% 46% 22%;
+        height: 57vw;
+    }
+    #nav{
+        align-items: start;
+    }
+    h1{
+        padding: 0  6em;
+    }
+    
+    #categories{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+    #categories h2{
+        grid-column: 1/3;
+    }
+    #categories div{
+        height: 30vw;
+    }
+    #categories #DSLR{
+        grid-column: 1/3;
+        background-image: url("../img/categoriesCompu1.jpg");
+        
+    }
+    #Accessories{
+        background-image: url("../img/categoriesCompu2.jpg");
+    }
+    #lenses{
+        background-image: url("../img/categoriesCompu3.jpg");
+    }
+    .card{
+        grid-column: 2/3;
+        justify-self: center;
+    }
+    .card img{
+        width: 20vw;
+        height: 20vw;
+    }
+    .arrow img {
+        width: 3vw;
+    }
+    #left, #right{
+        grid-row: 1/2;
+        justify-self: center;
+    }
+    #featured{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 34% 66%;
+        padding: 0 0 5em 0;
+    }
+    #featured picture{
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+    #featured img{
+        width: 43vw; 
+    }
+    #featured h2{
+        align-self: end;
+    }
+    #featured p{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #BannerDiscount{
+        max-width: 100%;
+        background-image: url("../img/backgroundBannerCompu.jpg");
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 25% 50% 25%;
+        justify-items: center;
+        align-items: center;
+        padding: 2em 5em;
+    }
+    #BannerDiscount{
+        text-align: left;
+    }
+    #BannerDiscount p{
+        text-align: left;
+        font-size: 2.5vw;
+    }
+    #BannerDiscount img{
+        width: 48vw;
+        
+    }
+    #BannerDiscount picture{
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    #BannerDiscount button{
+        justify-self: start;
+        align-self: start;
+    }
+    footer{
+        grid-template-columns: repeat(5, 1fr);
+        padding: 0 4em;
+        gap: 0 1.3em;
+        align-items: center;
+    }
+    footer #logo2, footer label, footer p, footer ul{
+        text-align: left;
+    }
+     footer #logo2, footer label{
+        grid-column: 1/2;
+    }
+    footer p{
+        grid-column: 1/3;
+    }
+    #Subscribe{
+        grid-column: 2/3;
+    }
+    footer ul {
+        grid-row: 2/4;
+        align-self: start;
+        padding: 0;
+        justify-self: center;
+    }
+    #service{
+        grid-column: 3/4;
+    }
+    #about{
+        grid-column: 4/5;
+    }
+    #social{
+        grid-column: 5/6;
+    }
+    #copy{
+        grid-column: 1/6;
+        justify-self: center;
+        padding: 7em 0 1.5em 0;
+    }
+    #blackButton, .purple, #Subscribe{
+        height: 2em;
+    }
+}
+@media(width >= 1200px){
+    
+    #nav, section{
+        max-width: 1450px;
+        margin: auto;
+    }
+    #nav{
+        align-items: start;
+        gap: 0;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        height: 0;
+    }
+    #burguer-link{
+        right:0;
+        display: grid;
+        background: transparent;
+        border: none;
+        grid-template-columns: 66% 34%;
+        justify-items: start;
+        align-items: start;
+        position: static;
+    }
+    .grid{
+        display: grid;
+    }
+    #burguer-link ul li {
+        padding: 0 0 0 4vw;
+        font-size: 1.1em;
+    }
+    #link{
+        justify-self: end;
+        align-self: center;
+    }
+    #icons{
+        justify-self: end;
+        align-self: center;
+    }
+    #link, #icons{
+        display: flex;
+    }
+    #icons, #logo{
+        z-index: 4;
+    }
+    nav label{
+        display: none;
+    }
+
+    .megaMenu{
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        /* top: 20%; */
+        height: auto;
+        text-align: left;
+        border-bottom: 1px solid #A66CFF;
+        padding: 2em 0;
+    }
+    .btn{
+        border: 2px solid transparent;
+        transition: border 0.3s ease, color 0.3s ease;
+
+    }
+    
+    .btn:hover{
+        border: 2px solid #A66CFF;
+        color: #A66CFF;
+        
+    }
+    .arrow, li img{
+        transition: border 0.3s ease, color 0.3s ease;
+    }
+    .arrow:hover, li img:hover{
+        filter: drop-shadow(0 0 4px #A66CFF) drop-shadow(0 0 8px #A66CFF);
+    }
+    #categories div{
+        transition: filter 0.4s ease;
+        position: relative;
+    }
+    #categories div::after{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: #A66CFF;
+        mix-blend-mode: color;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        filter: brightness(0.8) saturate(0.8); /* suaviza el color */
+        pointer-events: none;
+        border-radius: inherit;
+    }
+    #categories div:hover::after{
+        opacity: 0.5;
+    }
+ 
+    #link li, a{
+        transition: color 0.3s ease;
+    }
+    #link li:hover, a:hover{
+        color: #A66CFF;
+    }
+    .card img{
+        transition: 0.3s ease;
+    }
+    .card img:hover{
+        width: 21vw;
+        height: 21vw;
+    }
+}

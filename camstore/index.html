@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="js/button.js" defer></script>
+    <title>CamStore</title>
+</head>
+<body class="bg-black">
+    <header class="grid bg-cover">
+        <nav id="nav" class="flex">
+            <a id="logo" href="index.html" class="textWhite fontsNunito">CamStore</a>
+           <!--  hamburguerMenu -->
+            <input type="checkbox" id="menu" placeholder="menu">
+            <label for="menu" id="menuBurguer" class="btn">
+                <div id="top" class="bg-purple"></div>
+                <div id="meat" class="bg-purple"></div>
+                <div id="bottom" class="bg-purple"></div>
+            </label>
+            <nav id="burguer-link" class=" bg-black">
+                <label for="menu" id="xClose">
+                     <i><img src="img/close.png" alt="close menu"></i>
+                </label>
+                <ul id="link">
+                    <li><a href="index.html" class="textWhite fontsNunito">Home</a></li>
+                    <li class="textWhite fontsNunito hoverMegamenu">Cameras
+                        <ul class="megaMenu bg-black">
+                            <li><a class="textWhite fontsNunito" href="#">SLR Cameras</a></li>
+                            <li><a class="textWhite fontsNunito"href="#">Mirrorless Sytsems
+                            Cameras</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Compact Cameras</a></li>
+                            <li><a class="textWhite fontsNunito"href="#">Medium Format Cameras</a></li>
+                            <li><a class="textWhite fontsNunito"href="#">Rangefinder Cameras</a></li>
+                            <li><a class="textWhite fontsNunito"href="#">Instant Cameras</a></li>
+                            <li><a class="textWhite fontsNunito"href="#">Creative Film Cameras</a></li>
+                        </ul>
+                    </li>
+                    <li class="textWhite fontsNunito hoverMegamenu">Lenses
+                        <ul class="megaMenu bg-black">
+                            <li><a class="textWhite fontsNunito" href="#">SLR Lenses</a></li>
+                            <li><a class="textWhite fontsNunito"class="textWhite nunito"href="#">Mirrorless System Lenses</a></li>
+                            <li><a class="textWhite fontsNunito"href="#">Medium Format Lenses</a></li>
+                            <li><a class="textWhite fontsNunito"href="#">Rangefinder Lenses</a></li>
+                            <li><a class="textWhite fontsNunito"href="#">Converters & Adapters</a></li>
+                            <li><a class="textWhite fontsNunito"href="#">Lensbaby</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Compact Accessory Lenses</a></li>
+                        </ul>
+                    </li>
+                    <li class="textWhite fontsNunito hoverMegamenu">Audio
+                        <ul class="megaMenu bg-black">
+                            <li><a class="textWhite fontsNunito" href="#">Microphones</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Headphones</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Mixers</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Recorders</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Boom Poles</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Audio Accessories</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Cables & Adapters</a></li>
+                        </ul>
+                    </li>
+                    <li class="textWhite fontsNunito hoverMegamenu">Accesories
+                        <ul class="megaMenu bg-black">
+                            <li><a class="textWhite fontsNunito" href="#">Camera Accessories</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Lens Accessories</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Batteries & Power Accessories</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Bags & Cases</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Lens Filters</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Tripods & Heads</a></li>
+                            <li><a class="textWhite fontsNunito" href="#">Cleaning & Care</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="icons">
+                    <li><img src="img/userIcon.png" alt="user icon"></li>
+                    <li><img src="img/bag.png" alt="bag shop"></li>
+                </ul>
+            </nav>
+        </nav>
+        <h1 class="Title textWhite">Every Moment, 
+            Perfectly Captured</h1>
+            <button class="purple fontsNunito flex textWhite bg-purple btn" lass="bg-purple"type="button">Shop now</button>
+    </header>
+    <main>
+        <section id="categories" class="grid">
+            <h2 class="Title textWhite">Product categories</h2>
+            <div id="DSLR" class="bg-cover flex">
+                <h3 class="textWhite fontsNunito">DSLR</h3>
+            </div>
+            <div id="Accessories" class="bg-cover flex">
+                <h3 class="textWhite fontsNunito">Accessories</h3>
+            </div>
+            <div id="lenses" class="bg-cover flex">
+                <h3 class="textWhite fontsNunito">Camera lenses</h3>
+            </div>
+        </section>
+        <section id="products">
+            <h2 class="Title textWhite">Featured products</h2>
+            <div id="sliderContent" class="grid">
+                <div class="card flex">
+                    <h3 id="cardName" class="textWhite fontsNunito">Vintage 35mm Film Camera</h3>
+                    <picture class="bg-cover">
+                        <source id="cell" srcset="img/productCell1.png" media="(max-width: 900px)">
+                        <source id="compu" srcset="img/product1.png" media="(min-width: 950px)">
+                      <img id="imgProduct" src="img/product1.png" alt="photo of camera">  
+                    </picture>
+                    <p id="textCard" class="textWhite fontsNunito">This 35mm film camera features a timeless design and mechanical precision.</p>
+                    <p id="priceAnimation" class="textWhite fontsNunito">Price: <samp id="cardPrice" >$1000</samp>  </p>
+                </div>
+                    <button type="button" id="left" class="arrow "><img src="img/left.png" alt="button left slider"></button>
+                    <button type="button" id="right" class="arrow "><img src="img/right.png" alt="button right slider"></button>
+            </div> 
+               
+        </section>
+        <section id="featured" class="grid">
+            <picture>
+                <source srcset="img/person.jpg" media="(max-width: 900px)">
+                <source srcset="img/personde.jpg" media="(min-width: 950px)">
+              <img src="img/personde.jpg" alt="photo of camera">  
+            </picture>
+            <h2 class="Title textWhite">Featured products</h2>
+            <p class="textWhite fontsNunito">Laoreet vehicula dictumst neque dictum ante hac cum, at egestas erat parturient magna ac cras, maecenas varius faucibus curae lectus accumsan. In facilisis risus sociosqu diam habitasse, dui aliquet massa maecenas commodo eros, platea purus vel torquent. At rutrum cubilia proin tortor ultricies nisl mus pellentesque taciti donec, cras justo in etiam lobortis erat suspendisse risus aliquam habitasse, suscipit enim euismod imperdiet ridiculus sociosqu curabitur vestibulum pharetra.  </p>
+        </section>
+        <section id="BannerDiscount" class="grid bg-cover">
+            <h2 class="Title textWhite">Capture the perfect 
+                shot!</h2>
+                <p class="textWhite fontsNunito">Take advantage of our exclusive offer: <span> Up to 40% off on DSLR cameras and selected lenses</span></p>
+                <picture>
+                    <source id="cell" srcset="img/cameraBanner.png" media="(max-width: 900px)">
+                    <source id="compu" srcset="img/cameraBannerCompu.png" media="(min-width: 950px)">
+                    <img src="img/cameraBannerCompu.png" alt="camera Nikon">
+                </picture>
+                <button id="blackButton" type="button" class="bg-black flex textWhite btn">Shop now</button>
+        </section>
+    </main>
+    <footer class="grid">
+        <a id="logo2" href="#" class="textWhite fontsNunito">CamStore</a>
+        <p class="fontsNunito">Laoreet vehicula dictumst neque dictum ante hac cum, at egestas erat parturient magna ac cras, maecenas varius faucib</p>
+        <label for="Email"><input type="email" id="Email" placeholder="Email"></label>
+        <button type="submit" id="Subscribe" class="flex textWhite bg-purple btn">Subscribe</button>
+        <ul id="service">
+            <li><h4 class="fontsNunito">Customer Service</h4></li>
+            <li><a class="fontsNunito" href="#">Contacts US</a></li>
+            <li><a class="fontsNunito" href="#">Payments</a></li>
+            <li><a class="fontsNunito" href="#">Shipping & returns</a></li>
+            <li><a class="fontsNunito" href="#">Retailers</a></li>
+        </ul>
+        <ul id="about">
+            <li><h4 class="fontsNunito">About Us</h4></li>
+            <li><a class="fontsNunito" href="#">CamStore’s story</a></li>
+            <li><a class="fontsNunito" href="#">CamStore World</a></li>
+        </ul>
+        <ul id="social">
+            <li><h4 class="fontsNunito">Social Media</h4></li>
+            <li><a class="fontsNunito" href="#">Instagram</a></li>
+            <li><a class="fontsNunito" href="#">Facebook</a></li>
+        </ul>
+        <p class="fontsNunito" id="copy">© 2025, CamStore</p>
+    </footer>
+</body>
+</html>
