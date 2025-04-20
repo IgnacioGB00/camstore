@@ -261,7 +261,7 @@ h2{
 }
 footer{
     background-color: #FFFFFF;
-    padding: 1em;
+    padding: 1em 8px;
 }
 
 footer, footer #logo2, footer p{
